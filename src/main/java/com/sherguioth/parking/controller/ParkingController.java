@@ -4,6 +4,7 @@ import com.sherguioth.parking.dto.VehicleDetails;
 import com.sherguioth.parking.dto.VehicleInput;
 import com.sherguioth.parking.dto.VehicleSummary;
 import com.sherguioth.parking.service.ParkingService;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/parking")
 @RequiredArgsConstructor
 public class ParkingController {
